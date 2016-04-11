@@ -10,8 +10,15 @@
 		</layout>
 	</appender>
 	
+	 <!-- Query Loggers -->
+    <logger name="jdbc.sqlonly" additivity="true">  
+        <level value="INFO"/>  
+        <appender-ref ref="console-infolog"/>  
+    </logger>
+	
+	
 	<!-- Application Loggers -->
-	<logger name="com.example.controller">
+	<logger name="com.example.mybatis">
 		<level value="info" />
 	</logger>
 	
